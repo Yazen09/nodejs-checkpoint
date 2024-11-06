@@ -1,0 +1,9 @@
+const http = require('http');
+
+http.createServer( (req, res) => {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.end("<h1>Hello Node!!!!</h1>\n"); 
+}).listen(3011, () => {
+  console.log("server http://localhost:3011/");
+}); 
+
